@@ -5,8 +5,11 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { addUser, removeUser } from "../utils/userSlice";
 import { LOGO } from "../utils/constants";
+<<<<<<< HEAD
 import GptButton from "../buttons/GptButton";
 import { toggleSearchView } from "../utils/gptSlice";
+=======
+>>>>>>> 222b750912df937b022e4be600c51772ccaa5a5c
 
 
 const Header = () => {
@@ -23,11 +26,14 @@ const Header = () => {
 
     }
 
+<<<<<<< HEAD
     const toggleGptHandling = () => {
         console.log("Toggling GPT handling clicked");
         dispatch(toggleSearchView())
     }
 
+=======
+>>>>>>> 222b750912df937b022e4be600c51772ccaa5a5c
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {
@@ -45,7 +51,11 @@ const Header = () => {
 
 
     return (
+<<<<<<< HEAD
         <div className="absolute w-screen px-4 py-2 bg-gradient-to-b from-black z-10 border border-black-800 fixed top-0 left-0 w-full z-10">
+=======
+        <div className="absolute w-screen px-4 py-2 bg-gradient-to-b from-black z-10">
+>>>>>>> 222b750912df937b022e4be600c51772ccaa5a5c
             {/* Flex container to align logo left and button right */}
             <div className="flex items-center justify-between">
                 <img
@@ -53,9 +63,12 @@ const Header = () => {
                     src= {LOGO}
                     alt="logo"
                 />
+<<<<<<< HEAD
                 
                 <GptButton onClick={toggleGptHandling}/>
             
+=======
+>>>>>>> 222b750912df937b022e4be600c51772ccaa5a5c
 
                 {user && <div>
 
