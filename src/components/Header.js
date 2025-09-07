@@ -54,7 +54,7 @@ const Header = () => {
                     alt="logo"
                 />
                 
-                <GptButton onClick={toggleGptHandling}/>
+                {user && <GptButton onClick={toggleGptHandling}/>}
             
 
                 {user && <div>
