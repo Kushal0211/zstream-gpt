@@ -1,9 +1,11 @@
+import GptMovieSuggestions from "./GptMovieSuggestions";
 import SearchBar from "./SearchBar";
 
 const Gptsearch = () => {
 return (
-<div>
+<div className="bg-black full-h-screen"> 
     <SearchBar />
+    <GptMovieSuggestions/>
 </div>
 );
 }
