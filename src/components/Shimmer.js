@@ -2,7 +2,7 @@ import React from "react";
 
 const Shimmer = () => {
   return (
-    <div className="relative w-full h-screen bg-[#0d1b2a] overflow-hidden">
+   <div className="relative w-full h-screen bg-gradient-to-b from-black via-[#020202] to-black overflow-hidden">
       {/* Stars layers */}
       {[1, 2, 3, 4].map((layer) => (
         <div
