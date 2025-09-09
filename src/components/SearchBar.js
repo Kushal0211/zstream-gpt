@@ -36,7 +36,11 @@ export default function SearchBar() {
         "If you can't find 6 movies then give as many as you can but not less than 4. " +
         "Make sure that the movies you suggest are available on ZStream app for streaming. " +
         "Make sure that the movies you suggest are Indian Bollywood or Hollywood movies only. " +
-        "Understand what user is asking for and then suggest movies accordingly."
+        "Understand what user is asking for and then suggest movies accordingly." +
+        "Show me only movie name no other response please as I will use it in my code" + 
+        "Dont show any other text except movie names" + 
+        "Make sure that you suggest are present in tmdb database" +
+        "In case movie is not present in tmdb database then dont suggest that movie"
         ;
 
       const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
